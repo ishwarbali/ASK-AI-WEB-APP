@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Ask Azure AI</title>
+</head>
+<body>
+    <h1>Ask Azure OpenAI</h1>
+    <form method="post">
+        <input type="text" name="question" placeholder="Ask anything..." required>
+        <button type="submit">Ask</button>
+    </form>
+    {% if answer %}
+        <h2>Q: {{ question }}</h2>
+        <p><strong>AI:</strong> {{ answer }}</p>
+    {% endif %}
+</body>
+</html>
